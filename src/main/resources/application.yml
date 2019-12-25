@@ -1,0 +1,36 @@
+#server:
+#  servlet:
+#    context-path: /serviceclient
+#  port: 9000
+#spring:
+#  application:
+#    name: serviceclient #实例名称
+#eureka:
+#  client:
+#    #注册到注册中心，默认true
+#    register-with-eureka: true
+#    #是否偏好使用处于相同zone的服务提供者
+#    prefer-same-zone-eureka: true
+#    #可以理解为地区
+#    region: guangzhou
+#    #可用机房
+#    availability-zones:
+#      guangzhou: zone-1,zone-2
+#    service-url:
+#      #defaultZone: http://localhost:8080/eureka01/eureka/,http://localhost:8081/eureka02/eureka/
+#      zone-1: http://localhost:8080/eureka01/eureka/
+#      zone-2: http://localhost:8081/eureka02/eureka/
+#  instance:
+#    instance-id: serviceclient01 #status下面的超链接名称
+#    #显示IP
+#    prefer-ip-address: true
+#    #定义服务任务续约的调用间隔时间
+#    lease-renewal-interval-in-seconds: 5
+#    #定义服务失效时间
+#    lease-expiration-duration-in-seconds: 10
+#    #实例信息的元数据
+#    metadata-map:
+#      #实例属于哪个机房
+#      zone: zone-1
+
+

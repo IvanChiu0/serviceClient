@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      #读取的文件名
+      name: serviceclient
+      profile: prod
+      label: master
+      uri: http://localhost:9030/configserver01
